@@ -1,11 +1,11 @@
 # Hi there, I'm [Your Name] 👋
 
-I'm a [Your Job Title, e.g., Full Stack Developer / Data Scientist / Student] based in [Your Location]. I am passionate about [Mention 1-2 passions, e.g., building scalable web apps, open-source, machine learning].
+I'm a [Wendell, Full Stack Developer / Data Scientist / Student] based in [Philiphines]. I am passionate about [I love building scalable web apps and machine learning].
 
 ## 🚀 About Me
 
-- 🔭 I’m currently working on **[Project Name](Link to project)**
-- 🌱 I’m currently learning **[Technology/Language you are learning]**
+- 🔭 I’m currently working on **[Learning more latest and in demand languages](Link to project)**
+- 🌱 I’m currently learning **[C++, Erlang, Clojure, Scala, python, Golang, Rust]**
 - 👯 I’m looking to collaborate on **[Type of projects, e.g., open-source React projects]**
 - 💬 Ask me about **[Topics you are knowledgeable in, e.g., Python, UI design, API development]**
 - 📫 How to reach me: **[Your Email]** or **[Link to LinkedIn]**
