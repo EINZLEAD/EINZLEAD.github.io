@@ -21,6 +21,48 @@
             </ul>
         </div>
     </nav> 
+    <nav id="hamburger-nav">
+        <div class="logo">WENDELL MUSNI</div> 
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                    <li><a href="About" onclick="toggleMenu()">About</a></li>
+                    <li><a href="Experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="Projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="Contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="Profile">
+        <div class="section_pick-container">
+            <img src="./Assets/PFPP.png" alt="Wendell Musni Profile Picture">
+        </div>
+        <div class="section_text">
+            <P class="section_text_p1"> Hello I'm </P>
+            <h1 class="title"> WENDELL </h1>
+            <p class="section_text_p2"> Frontend Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./Assets/resume-example.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Me
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./Assets/linkedin.png" alt="" srcset="My LinkedIn" class="icon" 
+                onclick="location.href='https://www.linkedin.com/'">
+
+                <img src="./Assets/github.png" alt="" srcset="My GitHub" class="icon" 
+                onclick="location.href='https://www.github.com/'">
+            </div>
+        </div>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
