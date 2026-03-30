@@ -3,66 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Wendell Musni | Scribe & Smith of Code</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
-    
 </head>
 <body>
-    <nav id="desktop-nav"> 
-        <div class="logo">WENDELL MUSNI</div> 
-        <div>
-            <ul class="nav-links"> 
-                <li><a href="About">About</a></li>
-                <li><a href="Experience">Experience</a></li>
-                <li><a href="Projects">Projects</a></li>
-                <li><a href="Contact">Contact</a></li>
 
-            </ul>
-        </div>
-    </nav> 
-    <nav id="hamburger-nav">
-        <div class="logo">WENDELL MUSNI</div> 
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                    <li><a href="About" onclick="toggleMenu()">About</a></li>
-                    <li><a href="Experience" onclick="toggleMenu()">Experience</a></li>
-                    <li><a href="Projects" onclick="toggleMenu()">Projects</a></li>
-                    <li><a href="Contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
+    <nav>
+        <div class="logo">W. MUSNI</div>
+        
+        <ul id="desktop-nav">
+            <li><a href="#about">The Scribe</a></li>
+            <li><a href="#projects">The Forge</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div id="hamburger-icon" class="hamburger">&#9776;</div>
     </nav>
 
-    <section id="Profile">
-        <div class="section_pick-container">
-            <img src="./Assets/PFPP.png" alt="Wendell Musni Profile Picture">
-        </div>
-        <div class="section_text">
-            <P class="section_text_p1"> Hello I'm </P>
-            <h1 class="title"> WENDELL </h1>
-            <p class="section_text_p2"> Frontend Developer</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./Assets/resume-example.pdf')">
-                    Download CV
-                </button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">
-                    Contact Me
-                </button>
-            </div>
-            <div id="socials-container">
-                <img src="./Assets/linkedin.png" alt="" srcset="My LinkedIn" class="icon" 
-                onclick="location.href='https://www.linkedin.com/'">
+    <ul id="hamburger-nav">
+        <li><a href="#about" class="mobile-link">The Scribe</a></li>
+        <li><a href="#projects" class="mobile-link">The Forge</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
 
-                <img src="./Assets/github.png" alt="" srcset="My GitHub" class="icon" 
-                onclick="location.href='https://www.github.com/'">
+    <header>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="fade-in">WENDELL MUSNI</h1>
+                <p class="fade-in delay-1">Software Artisan | Tech Alchemist | Digital Realm Builder</p>
+                <button id="theme-toggle" class="btn theme-btn fade-in delay-2">Switch Theme</button>
+            </div>
+            
+            <div class="hero-visual">
+               <div class="avatar-placeholder float-anim">
+                    <img src="assets/me.png" alt="Wendell Musni, Software Artisan" class="hero-avatar">
+                </div>
             </div>
         </div>
-    </section>
+    </header>
+
+    <div class="container">
+        <section id="about" class="scroll-fade">
+            <h2>About The Scribe</h2>
+            <p>Welcome, traveller. I am WENDELL MUSNI, a humble scribe of the digital realms, impassioned to forge functional and elegant software artifacts. I am currently honing my craft in [mention specific fantasy-sounding technology, e.g., the Alchemical Arts of JavaScript and Python]. When not deciphering ancient code scrolls, you may find me [fantasy hobby, e.g., delving into digital dungeons].</p>
+        </section>
+
+        <section id="projects" class="scroll-fade">
+            <h2>From The Forge</h2>
+            <div class="projects-grid">
+                
+                <div class="project-card">
+                    <h3>Scroll One</h3>
+                    <p>A brief tale of a project, the challenge it overcame, and the mystical runes used.</p>
+                    <a href="https://github.com/yourusername/project1" target="_blank" class="btn">Examine Runes</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Scroll Two</h3>
+                    <p>A brief tale of another quest, the enemy defeated, and the enchantments woven.</p>
+                    <a href="https://github.com/yourusername/project2" target="_blank" class="btn">Examine Runes</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="scroll-fade">
+            <h2>Send Word</h2>
+            <p>I am always open to new alliances and collaborative delvings.</p>
+            <p>Raven Message: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Wendell Musni. Compiled with HTML, CSS & JS.</p>
+        <div>
+            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
