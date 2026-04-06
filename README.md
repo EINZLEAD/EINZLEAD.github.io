@@ -1,11 +1,11 @@
-# Hi there, I'm [Your Name] 👋
+# Hi there, I'm Wendell 👋
 
 I'm a [Wendell, Full Stack Developer / Data Scientist / Student] based in [Philiphines]. I am passionate about [I love building scalable web apps and machine learning].
 
 ## 🚀 About Me
 
 - 🔭 I’m currently working on **[Learning more latest and in demand languages](Link to project)**
-- 🌱 I’m currently learning **[C++, Erlang, Clojure, Scala, python, Golang, Rust]**
+- 🌱 I’m currently learning **[C++, JS, Clojure, nodeJS, python, Golang, React]**
 - 👯 I’m looking to collaborate on **[Type of projects, e.g., open-source React projects]**
 - 💬 Ask me about **[Topics you are knowledgeable in, e.g., Python, UI design, API development]**
 - 📫 How to reach me: **[Your Email]** or **[Link to LinkedIn]**
@@ -36,5 +36,5 @@ I'm a [Wendell, Full Stack Developer / Data Scientist / Student] based in [Phili
 
 ## 🔗 Let's Connect
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/[Your-LinkedIn-URL])
+[![LinkedIn]([https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/[Your-LinkedIn-URL]](https://www.linkedin.com/in/wendell-danganan-797498211/))
 [![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/[Your-Twitter-Handle])
