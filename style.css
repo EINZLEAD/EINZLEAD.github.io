@@ -54,7 +54,7 @@ nav a:hover { color: var(--accent-gold); border-bottom: 2px solid var(--accent-g
 #hamburger-nav li { padding: 15px 0; }
 #hamburger-nav a { font-family: var(--header-font); color: var(--primary-light); text-transform: uppercase; }
 
-/* --- UPDATED Banner (Header Section) --- */
+/* --- Banner (Header Section) --- */
 header {
     background-color: var(--primary-dark);
     background-image: linear-gradient(to bottom, #000 0%, var(--primary-dark) 100%);
@@ -63,7 +63,6 @@ header {
     border-bottom: 1px solid #332211;
 }
 
-/* New Flex Layout for the Split Screen */
 .hero-content {
     display: flex;
     justify-content: space-between;
@@ -74,7 +73,7 @@ header {
 }
 
 .hero-text {
-    flex: 1; /* Takes up left side */
+    flex: 1;
     text-align: left;
 }
 
@@ -89,38 +88,32 @@ header p {
 }
 
 .hero-visual {
-    flex: 1; /* Takes up right side */
+    flex: 1;
     display: flex;
     justify-content: center;
 }
 
-/* Avatar Box Styling */
-/* Update your existing container to hide overflowing edges */
 .avatar-placeholder {
     width: 300px;
     height: 400px;
     background-color: #2a1a14;
     border: 3px solid var(--accent-gold);
-    border-radius: 15px 50px; /* The shield/tome shape */
+    border-radius: 15px 50px; 
     box-shadow: 0 10px 30px rgba(0,0,0,0.8), inset 0 0 20px rgba(0,0,0,0.8);
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    /* ADD THIS LINE to clip the image to the border radius */
     overflow: hidden; 
 }
 
-/* ADD THIS NEW CLASS for the image itself */
 .hero-avatar {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Fills the box perfectly without squishing */
-    object-position: center top; /* Ensures your face stays in frame */
-    transition: transform 0.5s ease; /* Optional: smooth zoom effect */
+    object-fit: cover; 
+    object-position: center top; 
+    transition: transform 0.5s ease; 
 }
 
-/* Optional: Add a slight zoom effect when you hover over your photo! */
 .avatar-placeholder:hover .hero-avatar {
     transform: scale(1.05);
 }
@@ -143,6 +136,63 @@ section::after {
 h2 {
     font-family: var(--header-font); color: var(--accent-rust); border-bottom: 3px solid #8b4513;
     padding-bottom: 0.5rem; margin-top: 0; text-transform: uppercase; letter-spacing: 2px;
+}
+
+/* --- SKILL TREE SECTION --- */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 3rem;
+    margin-top: 2rem;
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 0.5rem;
+    font-family: var(--header-font);
+    font-weight: 700;
+    color: var(--body-text-light);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+.skill-percentage {
+    color: var(--accent-rust);
+}
+
+.skill-bar-bg {
+    width: 100%;
+    height: 8px;
+    background-color: rgba(26, 17, 16, 0.2);
+    border: 1px solid var(--accent-rust);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.skill-bar-fill {
+    height: 100%;
+    background-color: var(--accent-gold);
+    background-image: linear-gradient(90deg, #8b4513 0%, var(--accent-gold) 100%);
+    box-shadow: 0 0 10px rgba(201, 160, 99, 0.6);
+    border-radius: 3px;
+    transform-origin: left;
+    animation: fillBar 1.5s ease-out forwards;
+}
+
+@keyframes fillBar {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(1); }
 }
 
 /* --- Projects & Buttons --- */
@@ -192,12 +242,16 @@ body.dark-mode .project-card { background-color: var(--parchment-mid); border-co
 body.dark-mode .project-card h3 { color: var(--accent-gold); }
 body.dark-mode .avatar-placeholder { background-color: #0d0908; border-color: #6a4f3b; }
 
+/* Dark Mode Skills Overrides */
+body.dark-mode .skill-info { color: var(--body-text-dark); }
+body.dark-mode .skill-percentage { color: var(--accent-gold); }
+body.dark-mode .skill-bar-bg { background-color: #111; border-color: #4d3c35; }
+
 
 /* ========================================= */
 /* --- NEW MAGICAL ANIMATIONS (MOVEMENT) --- */
 /* ========================================= */
 
-/* 1. Fade and Slide Up Text */
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
@@ -214,7 +268,6 @@ body.dark-mode .avatar-placeholder { background-color: #0d0908; border-color: #6
     }
 }
 
-/* 2. Continuous Levitating Float for Image */
 .float-anim {
     animation: levitate 5s ease-in-out infinite;
 }
@@ -225,7 +278,6 @@ body.dark-mode .avatar-placeholder { background-color: #0d0908; border-color: #6
     100% { transform: translateY(0); }
 }
 
-/* 3. Subtle Section Entrance */
 .scroll-fade {
     animation: fadeInUp 1.2s ease-out forwards;
 }
